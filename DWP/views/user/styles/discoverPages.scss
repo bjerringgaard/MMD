@@ -1,0 +1,66 @@
+@import "../styles/cssConstants/variables.scss";
+@import "../styles/cssConstants/navigation.scss";
+@import "../styles/feed.scss";
+
+		.card{
+			width: calc(1364px + 40px);
+			height: 70px;
+			border-radius: 15px;
+
+			display:  flex;
+			margin: 20px;
+
+			justify-content: center;
+			align-items: center;
+
+
+			background-color: #7700FF;
+			color: $White;
+			font-size: 24px;
+
+			i {
+				margin-right: 20px;
+				font-size: 30px;
+			}
+		}
+		#cardLike {
+			background-color: #d64541;
+			color: #96281b;
+		}
+
+		#cardComment{
+			background-color: #446cb3;
+			color: #3a539b;
+		}
+		
+		#cardPinned{
+			color: #4e1c80;
+		}
+
+@media (prefers-color-scheme: light) {
+	body { 
+		background-color: $ldark;
+		}
+		
+	// Navigation 
+	header{
+		background: $lbackground;
+		}
+	
+		nav{
+				a{
+					color:$lWhite;
+				}
+			}
+	
+		#logo{
+			color: $lWhite;
+			a{
+				color: $lWhite;
+			}
+			}	
+	
+		.menu-trigger {
+			color:$lWhite;
+			}
+}
