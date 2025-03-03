@@ -1,0 +1,56 @@
+<!--
+  Generated template for the ValgetPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content no-padding no-margin>
+
+  <div id="controller">
+
+    <div id="profile">
+      <img src="assets/imgs/dudeprofile.png" alt="">
+    </div>
+
+    <div id="profiletext">
+      <p>Kan du mærke hvad det er?</p>
+    </div>
+
+  </div>
+
+  <ion-grid no-margin no-padding>
+    <ion-row no-margin>
+      <ion-col col-md-6 no-margin (tap)="hide_1()"><div id="pic1"></div></ion-col>
+      <ion-col col-md-6 no-margin (tap)="hide_1()"><div id="pic2"></div></ion-col>
+    </ion-row>
+
+    <ion-row no-margin>
+      <ion-col col-md-6 no-margin (tap)="hide_1()"><div id="pic3"></div></ion-col>
+      <ion-col col-md-6 no-margin (tap)="hide_1()"><div id="pic4"></div></ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div id="overlay_1" *ngIf="hideme_1" (tap)="hide_1()"></div>
+  <div class="modal_1" *ngIf="hideme_1">
+    <div id="speech1"><p>Det rigtige svar <br> er <b id="correct">Musling</b></p> </div>
+    <div id="speech2"><p><b>Vidste du at...</b> <br> Muslinger kan <br> være mellem få cm <br> til en meter <br> lange?</p></div>
+
+    <div id="next" (tap)="goToFinished()" >
+      <ion-icon name="md-arrow-round-forward"></ion-icon>
+    </div>
+
+    <div id="close" (tap)="goToHome()">
+      <ion-icon name="close-circle-outline"></ion-icon>
+    </div>
+
+    <div id="dude">
+      <img src="assets/imgs/dude1.png" alt="">
+    </div>
+
+  </div>
+
+
+
+</ion-content>
+

@@ -1,0 +1,70 @@
+page-boxfire {
+
+  .master {
+    background-color: map_get($colors, primary);
+    height: 1024px;
+    width: 768px;
+  }
+
+  #next {
+    position: absolute;
+    margin: 650px 0 0 600px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: map_get($colors, secondary);
+    display: flex;
+    justify-content: center;
+
+    ion-icon {
+      display: flex;
+      justify-items: center;
+      margin: 0 auto;
+      align-items: center;
+      font-size: 90px;
+      color: white;
+      z-index: 20;
+    }
+  }
+
+  #speech {
+    position: absolute;
+    margin: -100px 0px 0 200px;
+    border-radius: 50%;
+    height: 80%;
+    width: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      margin: 70px 0 0 -100px;
+      font-size: 70px;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin: 10px 0 0 -100px;
+      justify-content: center;
+      text-align: center;
+      font-size: 50px;
+    }
+
+  }
+
+  #dude {
+    margin: 580px 0px 0 20px;
+    position: absolute;
+    justify-content: left;
+
+    z-index: 15;
+
+
+    img {
+      height: 450px;
+    }
+  }
+
+}
